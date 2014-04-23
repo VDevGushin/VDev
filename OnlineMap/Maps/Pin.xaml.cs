@@ -65,7 +65,7 @@ namespace OnlineMap.Maps
         }
         //only text
         public Pin(char text)
-        {
+        {            
             InitializeComponent();
             HideImage();
         }
@@ -110,9 +110,27 @@ namespace OnlineMap.Maps
             }
         }
 
+        public bool CanBeAnimated { get; set; }
+
         private void UserControl_Tap(object sender, System.Windows.Input.GestureEventArgs e)
-        {            
-            PushAnimation.Begin();
+        {
+            if (CanBeAnimated)
+            {
+                CanBeAnimated = false;
+                PushAnimation.Begin();
+                PushAnimation.Completed += PushAnimation_Completed;
+            }
+        }
+
+        void PushAnimation_Completed(object sender, EventArgs e)
+        {
+            PushAnimation.Stop();
+            CanBeAnimated = true;
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            CanBeAnimated = true;
         }
 
                      

@@ -7,12 +7,12 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    RenderTransformOrigin="0,0" Tap="UserControl_Tap" >
+    RenderTransformOrigin="0,0" Tap="UserControl_Tap" Loaded="UserControl_Loaded" >
 	<UserControl.Resources>		
 		<Storyboard x:Name="PushAnimation" AutoReverse="True">
 			<DoubleAnimation Duration="0:0:0.5" To="-6" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.GlobalOffsetY)" Storyboard.TargetName="SimpleImage" d:IsOptimized="True">
 				<DoubleAnimation.EasingFunction>
-					<CubicEase EasingMode="EaseIn"/>
+					<BounceEase EasingMode="EaseIn"/>
 				</DoubleAnimation.EasingFunction>
 			</DoubleAnimation>
 		</Storyboard>		
