@@ -1,0 +1,82 @@
+﻿<UserControl x:Class="OnlineMap.Maps.Pin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    RenderTransformOrigin="0,0" Tap="UserControl_Tap" >
+	<UserControl.Resources>		
+		<Storyboard x:Name="PushAnimation" AutoReverse="True">
+			<DoubleAnimation Duration="0:0:0.5" To="-6" Storyboard.TargetProperty="(UIElement.Projection).(PlaneProjection.GlobalOffsetY)" Storyboard.TargetName="SimpleImage" d:IsOptimized="True">
+				<DoubleAnimation.EasingFunction>
+					<CubicEase EasingMode="EaseIn"/>
+				</DoubleAnimation.EasingFunction>
+			</DoubleAnimation>
+		</Storyboard>		
+	</UserControl.Resources>
+
+
+    <Grid x:Name="grdRoot" VerticalAlignment="Center" HorizontalAlignment="Center">
+        <Path  Stretch="Fill" Opacity="1" RenderTransformOrigin="0.501,0.281" Data="M0,-250L6.09909264359567,-250C7.86508433137037,-249.883679757668 9.5771753004554,-249.696968148304 11.2361413649071,-249.457603405072 24.5078612249376,-247.542676877067 34.3794798686271,-242.257907887612 41.2465583494687,-237.283319185337 44.6800986937064,-234.796020219885 47.3625022581612,-232.386267374123 49.3432151487858,-230.514059732522 50.3335754087938,-229.577954004373 51.1485091856508,-228.776236246195 51.7942001036199,-228.166407297221 56.0964631917223,-224.103097789728 68.1963801884179,-208.309435634954 69.289336364603,-191.492424677005 70.6231971699074,-170.968460931381 68.290878635012,-158.519576085084 59.6252929380878,-143.46295614065 52.4136905999628,-130.932641056522 38.9633656169578,-121.172558189545 25.9663459471247,-99.9756667119496 22.717070324265,-94.6763733347819 19.5096780307535,-85.8535122559554 16.5262691191198,-75.6002242070549 15.0345529933047,-70.4735161130636 13.5988258504601,-64.9891717094285 12.2418500593682,-59.4087874394669 8.8494006958964,-45.4578438671403 0.658368923825747,-0.264830522697093 0.658368923825747,-0.264830522697093L0.658368923825747,-0.264830522697093C0.658368923825747,-0.264830522697093 -6.20713033738298,-39.8775058725022 -10.9565428086754,-59.4087721806768 -13.6705143479304,-70.5696227914182 -16.6994467050881,-81.3462113972954 -19.8613212892067,-89.645756433626 -21.4422436994774,-93.7955199281247 -23.0564059677924,-97.3260283129902 -24.6810425111283,-99.9756667119496 -37.6780541099905,-121.172569912188 -51.1284623692131,-130.932797619228 -58.3399704286158,-143.462940881861 -67.0055167526496,-158.519492415143 -69.3378901087436,-170.968446571251 -68.0040291139176,-191.492413232913 -66.9110789415046,-208.309331812531 -54.8111481537909,-224.103105568266 -50.508885223533,-228.166399667826 -47.9261288596012,-230.605716191039 -42.6354741589363,-236.115224319832 -34.2414024659624,-241.014917085726 -30.0443655550756,-243.464752007233 -25.0714708225116,-245.762135285075 -19.2732761689687,-247.447058389738 -16.3741806336881,-248.289518545224 -13.2687567063844,-248.978864381863 -9.95082648482475,-249.457595894886 -8.29186423506778,-249.6969603997 -6.57977326598088,-249.883671889854 -4.81378157820587,-250z" StrokeThickness="2.5" Margin="-28.398,-30.999,0,0" x:Name="shpShadow" Width="35" Height="30.754" VerticalAlignment="Top" Fill="#59000000" HorizontalAlignment="Left" d:LayoutOverrides="Width, Height" IsHitTestVisible="False">
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                    <SkewTransform AngleX="-57.547" AngleY="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="45.252" Y="0"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+        </Path>
+
+        <Path x:Name="shpPushpin" Stretch="Fill" Stroke="#FF000000" Opacity="1" RenderTransformOrigin="0.501,0.281" Data="M0,-250L6.09909264359567,-250C7.86508433137037,-249.883679757668 9.5771753004554,-249.696968148304 11.2361413649071,-249.457603405072 24.5078612249376,-247.542676877067 34.3794798686271,-242.257907887612 41.2465583494687,-237.283319185337 44.6800986937064,-234.796020219885 47.3625022581612,-232.386267374123 49.3432151487858,-230.514059732522 50.3335754087938,-229.577954004373 51.1485091856508,-228.776236246195 51.7942001036199,-228.166407297221 56.0964631917223,-224.103097789728 68.1963801884179,-208.309435634954 69.289336364603,-191.492424677005 70.6231971699074,-170.968460931381 68.290878635012,-158.519576085084 59.6252929380878,-143.46295614065 52.4136905999628,-130.932641056522 38.9633656169578,-121.172558189545 25.9663459471247,-99.9756667119496 22.717070324265,-94.6763733347819 19.5096780307535,-85.8535122559554 16.5262691191198,-75.6002242070549 15.0345529933047,-70.4735161130636 13.5988258504601,-64.9891717094285 12.2418500593682,-59.4087874394669 8.8494006958964,-45.4578438671403 0.658368923825747,-0.264830522697093 0.658368923825747,-0.264830522697093L0.658368923825747,-0.264830522697093C0.658368923825747,-0.264830522697093 -6.20713033738298,-39.8775058725022 -10.9565428086754,-59.4087721806768 -13.6705143479304,-70.5696227914182 -16.6994467050881,-81.3462113972954 -19.8613212892067,-89.645756433626 -21.4422436994774,-93.7955199281247 -23.0564059677924,-97.3260283129902 -24.6810425111283,-99.9756667119496 -37.6780541099905,-121.172569912188 -51.1284623692131,-130.932797619228 -58.3399704286158,-143.462940881861 -67.0055167526496,-158.519492415143 -69.3378901087436,-170.968446571251 -68.0040291139176,-191.492413232913 -66.9110789415046,-208.309331812531 -54.8111481537909,-224.103105568266 -50.508885223533,-228.166399667826 -47.9261288596012,-230.605716191039 -42.6354741589363,-236.115224319832 -34.2414024659624,-241.014917085726 -30.0443655550756,-243.464752007233 -25.0714708225116,-245.762135285075 -19.2732761689687,-247.447058389738 -16.3741806336881,-248.289518545224 -13.2687567063844,-248.978864381863 -9.95082648482475,-249.457595894886 -8.29186423506778,-249.6969603997 -6.57977326598088,-249.883671889854 -4.81378157820587,-250z" StrokeThickness="2.5" HorizontalAlignment="Left" Margin="-18,-63.25,0,0"  Width="35" d:LayoutOverrides="Width" Height="63" VerticalAlignment="Top" Cursor="Hand">
+        	<Path.Projection>
+        		<PlaneProjection/>
+        	</Path.Projection>
+            <Path.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Path.RenderTransform>
+            <Path.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFFFF77F" Offset="0"/>
+                    <GradientStop Color="#FFFCF14E" Offset="1"/>
+                </LinearGradientBrush>
+            </Path.Fill>
+        </Path>
+        
+        <TextBlock x:Name="txtTitle" TextWrapping="Wrap" Foreground="Black" d:LayoutOverrides="Height, GridBox" RenderTransformOrigin="0.51,0.491" TextAlignment="Center" Text="B" Margin="-15.55,-60,0,0"  VerticalAlignment="Top" Width="30" FontSize="24" Visibility="Collapsed" FontFamily="Verdana" HorizontalAlignment="Left" IsHitTestVisible="False" >
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+         </TextBlock.RenderTransform></TextBlock>
+        
+        <Ellipse x:Name="shpDot" Fill="#FF000000" Stroke="#FF000000" StrokeThickness="2.5" Margin="-20,-50,0,0"  VerticalAlignment="Top" Width="10" Height="10" d:LayoutOverrides="HorizontalAlignment, GridBox" Visibility="Collapsed" IsHitTestVisible="False"/>
+
+        
+
+        <Image x:Name="SimpleImage" Source="pin_blue.png" Opacity="1" Visibility="Collapsed" RenderTransformOrigin="0.501,0.281"  HorizontalAlignment="Left" Margin="-24,-50,0,0"  Width="65" d:LayoutOverrides="Width" Height="65" VerticalAlignment="Top" >
+        	<Image.Projection>
+        		<PlaneProjection/>
+        	</Image.Projection>
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform ScaleX="1" ScaleY="1"/>
+                    <SkewTransform AngleX="0" AngleY="0"/>
+                    <RotateTransform Angle="0"/>
+                    <TranslateTransform X="0" Y="0"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+    </Grid>
+</UserControl>

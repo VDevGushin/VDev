@@ -1,0 +1,25 @@
+﻿<UserControl x:Class="OnlineMap.Maps.MapControlUI"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+              xmlns:my="clr-namespace:OnlineMap.Maps"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    d:DesignHeight="480" d:DesignWidth="480" Loaded="UserControl_Loaded">
+
+
+
+
+    <Grid x:Name="LayoutRoot" Background="#FFC5C5C5" VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+            <MultiScaleImage x:Name="_msi"  Margin="0,0,0,0" Grid.RowSpan="1" CacheMode="BitmapCache"/>
+            <Grid x:Name="grdLayer1"                  
+                  Width="{Binding ActualWidth,ElementName= _msi}"
+                  Height="{Binding ActualHeight,ElementName=_msi}"
+                  VerticalAlignment="Stretch" HorizontalAlignment="Stretch"/>              
+        <Ellipse x:Name="GridCurrentLocation" Visibility="Collapsed" Fill="Red" HorizontalAlignment="Center" Height="20" Margin="0" Stroke="Black" VerticalAlignment="Center" Width="20" StrokeThickness="3"/>
+    </Grid>
+
+</UserControl>
