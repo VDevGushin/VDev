@@ -1,12 +1,12 @@
-﻿<xapCache source="D:\Mapcontrol\OnlineMap\OnlineMap\Bin\Debug\OnlineMap_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="22.04.2014 15:54:14">
-  <file source="D:\Mapcontrol\OnlineMap\OnlineMap\obj\Debug\OnlineMap.dll" archivePath="OnlineMap.dll" lastWriteTime="22.04.2014 15:54:13" />
-  <file source="D:\Mapcontrol\OnlineMap\OnlineMap\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="14.04.2014 17:43:44" />
-  <file source="D:\Mapcontrol\OnlineMap\OnlineMap\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="14.04.2014 17:43:44" />
-  <file source="D:\Mapcontrol\OnlineMap\OnlineMap\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="14.04.2014 17:43:44" />
-  <file source="D:\Mapcontrol\OnlineMap\OnlineMap\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="14.04.2014 17:43:44" />
-  <file source="D:\Mapcontrol\OnlineMap\OnlineMap\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="14.04.2014 17:43:44" />
-  <file source="D:\Mapcontrol\OnlineMap\OnlineMap\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="14.04.2014 17:43:47" />
-  <file source="D:\Mapcontrol\OnlineMap\OnlineMap\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="14.04.2014 17:43:44" />
-  <file source="D:\Mapcontrol\OnlineMap\OnlineMap\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="14.04.2014 17:43:44" />
-  <file source="D:\Mapcontrol\OnlineMap\OnlineMap\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="18.04.2014 18:39:55" />
+﻿<xapCache source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\Bin\Debug\OnlineMap_Debug_AnyCPU.xap" wasSigned="False" wasTritonized="False" certificateThumbprint="" TimeStampUrl="" signKeyFile="" signKeyPassword="" lastWriteTime="23.04.2014 17:39:44">
+  <file source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\obj\Debug\OnlineMap.dll" archivePath="OnlineMap.dll" lastWriteTime="23.04.2014 17:39:44" />
+  <file source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\Assets\AlignmentGrid.png" archivePath="Assets\AlignmentGrid.png" lastWriteTime="14.04.2014 17:43:44" />
+  <file source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\Assets\Tiles\FlipCycleTileLarge.png" archivePath="Assets\Tiles\FlipCycleTileLarge.png" lastWriteTime="14.04.2014 17:43:44" />
+  <file source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\Assets\Tiles\FlipCycleTileSmall.png" archivePath="Assets\Tiles\FlipCycleTileSmall.png" lastWriteTime="14.04.2014 17:43:44" />
+  <file source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\Assets\Tiles\IconicTileMediumLarge.png" archivePath="Assets\Tiles\IconicTileMediumLarge.png" lastWriteTime="14.04.2014 17:43:44" />
+  <file source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\Assets\Tiles\IconicTileSmall.png" archivePath="Assets\Tiles\IconicTileSmall.png" lastWriteTime="14.04.2014 17:43:44" />
+  <file source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="14.04.2014 17:43:47" />
+  <file source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\Bin\Debug\Assets\ApplicationIcon.png" archivePath="Assets\ApplicationIcon.png" lastWriteTime="14.04.2014 17:43:44" />
+  <file source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png" archivePath="Assets\Tiles\FlipCycleTileMedium.png" lastWriteTime="14.04.2014 17:43:44" />
+  <file source="C:\Users\gushchin\Documents\GitHub\OnlineMap\OnlineMap\Bin\Debug\Properties\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="18.04.2014 18:39:55" />
 </xapCache>
